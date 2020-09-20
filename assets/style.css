@@ -1,3 +1,93 @@
+:root {
+  --panel-skew-angle: 10deg;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: lightgray;
+  background: #111111;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+header, footer {
+  background: #2C2D41;
+}
+
+h1, h2, footer {
+  font-family: 'ABeeZee', sans-serif;
+}
+
+i.fab, i.fas {
+  min-width: 1.2em;
+}
+
+svg.flag {
+  width: 1em;
+  height: 0.75em;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.panel {
+  min-height: 300px;
+  padding: 1em 2em;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links li {
+  display: inline-block;
+  margin-right: 0.75em;
+}
+
+.links a {
+  border: 1px solid #FFFFFF;
+  border-radius: 3em;
+  color: #FFFFFF;
+  display: block;
+  font-family: 'ABeeZee', sans-serif;
+  opacity: 0.9;
+  padding: 0.4em 0.9em;
+  text-decoration: none;
+}
+
+.links a.disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.links a:hover:not(.disabled) {
+  background: rgba(255, 255, 255, 0.05);
+  opacity: 1;
+}
+
+@media screen and (min-width: 1060px) {
+  .panel:nth-child(1n) {
+    transform: skew(var(--panel-skew-angle));
+  }
+
+  .panel:nth-child(1n) > * {
+    transform: skew(calc(-1 * var(--panel-skew-angle)));
+  }
+
+  .panel:nth-child(2n) {
+    transform: skew(calc(-1 * var(--panel-skew-angle)));
+  }
+
+  .panel:nth-child(2n) > * {
+    transform: skew(var(--panel-skew-angle));
+  }
 }
