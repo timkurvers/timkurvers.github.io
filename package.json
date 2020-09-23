@@ -1,0 +1,10 @@
+{
+  "name": "@timkurvers/timkurvers.github.io",
+  "author": "Tim Kurvers <tim@moonsphere.net>",
+  "repository": "github:timkurvers/timkurvers.github.io",
+  "license": "MIT",
+  "private": true,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
