@@ -10,9 +10,7 @@ View live: https://timkurvers.github.io
 
 ## Setup
 
-Install [Node.js] or higher for your platform.
-
-Install dependencies through npm:
+Install [Node.js] for your platform and install dependencies through npm:
 
 ```bash
 npm install
