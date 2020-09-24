@@ -48,6 +48,7 @@ img.backdrop {
 
 img.photo {
   border-radius: 50%;
+  display: block;
   float: right;
   padding: 2em;
   width: 130px;
@@ -127,14 +128,25 @@ time {
   opacity: 1;
 }
 
-@media screen and (max-width: 724px) {
+@media screen and (max-width: 699px) {
+  header h1 {
+    text-align: center;
+  }
+
   img.backdrop {
     /* TODO: How to display these images neatly on smaller devices? */
     display: none;
   }
+
+  img.photo {
+    float: none;
+    margin: 1rem auto;
+    padding: 0;
+    width: 100px;
+  }
 }
 
-@media screen and (min-width: 725px) {
+@media screen and (min-width: 700px) {
   img.backdrop {
     height: 100%;
     -webkit-mask-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 1.0) 25%);
