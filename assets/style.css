@@ -88,7 +88,7 @@ time {
 
 .panel {
   overflow: hidden;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 1.5rem;
   position: relative;
 }
 
@@ -169,6 +169,10 @@ time {
 
   footer > * {
     transform: skew(43deg);
+  }
+
+  .panel {
+    padding: 0.5rem 2.5rem;
   }
 
   .panel.skewed {
