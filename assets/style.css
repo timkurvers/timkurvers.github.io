@@ -144,6 +144,10 @@ time {
     right: -30px;
     top: 0;
   }
+
+  .notable-project.panel {
+    padding-right: 240px;
+  }
 }
 
 @media screen and (min-width: 1060px) {
