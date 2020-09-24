@@ -1,5 +1,5 @@
 :root {
-  --panel-skew-angle: 10deg;
+  --panel-skew-angle: 11deg;
 }
 
 html, body {
@@ -7,13 +7,16 @@ html, body {
   padding: 0;
 }
 
-body {
-  background: #111111;
-  color: #FFFFFF;
+html {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #111111;
+  color: #FFFFFF;
 }
 
 header, footer {
@@ -24,13 +27,57 @@ h1, h2, footer {
   font-family: 'ABeeZee', sans-serif;
 }
 
+h1 {
+  font-size: 2.57rem;
+}
+
+h2 {
+  font-size: 1.85rem;
+}
+
 i.fab, i.fas {
-  min-width: 1.2em;
+  min-width: 1.2rem;
+}
+
+img.backdrop {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+img.photo {
+  border-radius: 50%;
+  float: right;
+  padding: 2em;
+  width: 130px;
+}
+
+p {
+  line-height: 1.5rem;
+  margin: 1.25rem 0;
+}
+
+p a {
+  color: #EEEEEE;
+  opacity: 0.9;
+}
+
+p a:hover {
+  color: #FFFFFF;
 }
 
 svg.flag {
-  width: 1em;
-  height: 0.75em;
+  width: 1rem;
+  height: 0.75rem;
+}
+
+time {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-left: 0.5em;
+  opacity: 0.32;
+  vertical-align: middle;
 }
 
 .container {
@@ -39,8 +86,14 @@ svg.flag {
 }
 
 .panel {
-  min-height: 300px;
-  padding: 1em 2em;
+  overflow: hidden;
+  padding: 0.5rem 2.5rem;
+  position: relative;
+}
+
+.panel .contents {
+  position: relative;
+  z-index: 2;
 }
 
 .links {
@@ -50,17 +103,17 @@ svg.flag {
 
 .links li {
   display: inline-block;
-  margin-right: 0.75em;
+  margin-right: 0.75rem;
 }
 
 .links a {
-  border: 1px solid #FFFFFF;
-  border-radius: 3em;
+  border: 2px solid #FFFFFF;
+  border-radius: 3rem;
   color: #FFFFFF;
   display: block;
   font-family: 'ABeeZee', sans-serif;
   opacity: 0.9;
-  padding: 0.4em 0.9em;
+  padding: 0.4rem 0.9rem;
   text-decoration: none;
 }
 
@@ -74,20 +127,47 @@ svg.flag {
   opacity: 1;
 }
 
+@media screen and (max-width: 724px) {
+  img.backdrop {
+    /* TODO */
+  }
+}
+
+@media screen and (min-width: 725px) {
+  img.backdrop {
+    height: 100%;
+    mask-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 1.0) 25%);
+    opacity: 0.20;
+    position: absolute;
+    right: -30px;
+    top: 0;
+  }
+}
+
 @media screen and (min-width: 1060px) {
-  .panel:nth-child(1n) {
+  footer {
+    transform: skew(-41deg);
+  }
+
+  footer > * {
+    transform: skew(41deg);
+  }
+
+  .panel.skewed:nth-child(1n) {
     transform: skew(var(--panel-skew-angle));
   }
 
-  .panel:nth-child(1n) > * {
+  .panel.skewed:nth-child(1n) .contents > *,
+  .panel.skewed:nth-child(1n) img.backdrop {
     transform: skew(calc(-1 * var(--panel-skew-angle)));
   }
 
-  .panel:nth-child(2n) {
+  .panel.skewed:nth-child(2n) {
     transform: skew(calc(-1 * var(--panel-skew-angle)));
   }
 
-  .panel:nth-child(2n) > * {
+  .panel.skewed:nth-child(2n) .contents > *,
+  .panel.skewed:nth-child(2n) img.backdrop {
     transform: skew(var(--panel-skew-angle));
   }
 }
