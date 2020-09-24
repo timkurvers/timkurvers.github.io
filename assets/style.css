@@ -69,14 +69,6 @@ svg.flag {
   height: 0.75rem;
 }
 
-time {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  margin-left: 0.5em;
-  opacity: 0.32;
-  vertical-align: middle;
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -124,6 +116,14 @@ time {
   opacity: 1;
 }
 
+.time-frame {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-left: 0.5em;
+  opacity: 0.45;
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 699px) {
   header h1 {
     text-align: center;
@@ -139,6 +139,11 @@ time {
     margin: 1rem auto;
     padding: 0;
     width: 100px;
+  }
+
+  .time-frame {
+    display: block;
+    margin-left: 0;
   }
 }
 
