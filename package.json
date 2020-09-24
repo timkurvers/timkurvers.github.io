@@ -4,8 +4,12 @@
   "repository": "github:timkurvers/timkurvers.github.io",
   "license": "MIT",
   "private": true,
-  "scripts": {},
-  "dependencies": {},
+  "scripts": {
+    "start": "serve -p ${PORT:=8000}"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
