@@ -137,6 +137,7 @@ time {
 @media screen and (min-width: 725px) {
   img.backdrop {
     height: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 1.0) 25%);
     mask-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 1.0) 25%);
     opacity: 0.20;
     position: absolute;
