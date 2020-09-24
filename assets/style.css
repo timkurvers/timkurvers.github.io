@@ -1,7 +1,3 @@
-:root {
-  --panel-skew-angle: 11deg;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -164,7 +160,7 @@ time {
 
 @media screen and (min-width: 1060px) {
   footer {
-    transform: skew(-43deg);
+    transform: skew(calc(-1 * 43deg));
   }
 
   footer > * {
@@ -180,20 +176,20 @@ time {
   }
 
   .panel.skewed:nth-child(1n) {
-    transform: skew(var(--panel-skew-angle));
+    transform: skew(11deg);
   }
 
   .panel.skewed:nth-child(1n) .contents > *,
   .panel.skewed:nth-child(1n) img.backdrop {
-    transform: skew(calc(-1 * var(--panel-skew-angle)));
+    transform: skew(calc(-1 * 11deg));
   }
 
   .panel.skewed:nth-child(2n) {
-    transform: skew(calc(-1 * var(--panel-skew-angle)));
+    transform: skew(calc(-1 * 11deg));
   }
 
   .panel.skewed:nth-child(2n) .contents > *,
   .panel.skewed:nth-child(2n) img.backdrop {
-    transform: skew(var(--panel-skew-angle));
+    transform: skew(11deg);
   }
 }
