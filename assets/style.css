@@ -129,7 +129,8 @@ time {
 
 @media screen and (max-width: 724px) {
   img.backdrop {
-    /* TODO */
+    /* TODO: How to display these images neatly on smaller devices? */
+    display: none;
   }
 }
 
