@@ -165,7 +165,7 @@ svg.flag {
 
 @media screen and (min-width: 1060px) {
   footer {
-    transform: skew(calc(-1 * 43deg));
+    transform: skew(-43deg);
   }
 
   footer > * {
@@ -186,11 +186,11 @@ svg.flag {
 
   .panel.skewed:nth-child(1n) .contents > *,
   .panel.skewed:nth-child(1n) img.backdrop {
-    transform: skew(calc(-1 * 11deg));
+    transform: skew(-11deg);
   }
 
   .panel.skewed:nth-child(2n) {
-    transform: skew(calc(-1 * 11deg));
+    transform: skew(-11deg);
   }
 
   .panel.skewed:nth-child(2n) .contents > *,
