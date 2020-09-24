@@ -152,11 +152,15 @@ time {
 
 @media screen and (min-width: 1060px) {
   footer {
-    transform: skew(-41deg);
+    transform: skew(-43deg);
   }
 
   footer > * {
-    transform: skew(41deg);
+    transform: skew(43deg);
+  }
+
+  .panel.skewed {
+    min-height: 22.85rem;
   }
 
   .panel.skewed:nth-child(1n) {
