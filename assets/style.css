@@ -64,7 +64,11 @@ p a:hover {
   color: #FFFFFF;
 }
 
-svg.flag {
+.flagged {
+  white-space: nowrap;
+}
+
+.flagged img {
   width: 1rem;
   height: 0.75rem;
 }
