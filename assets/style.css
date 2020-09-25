@@ -168,11 +168,11 @@ p a:hover {
 
 @media screen and (min-width: 1060px) {
   footer {
-    transform: skew(-43deg);
+    transform: skew(-45deg);
   }
 
   footer > * {
-    transform: skew(43deg);
+    transform: skew(45deg);
   }
 
   .panel {
@@ -180,7 +180,7 @@ p a:hover {
   }
 
   .panel.skewed {
-    min-height: 22.85rem;
+    min-height: 24rem;
   }
 
   .panel.skewed:nth-child(1n) {
