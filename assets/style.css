@@ -167,14 +167,6 @@ p a:hover {
 }
 
 @media screen and (min-width: 1060px) {
-  footer {
-    transform: skew(-45deg);
-  }
-
-  footer > * {
-    transform: skew(45deg);
-  }
-
   .panel {
     padding: 0.5rem 2.5rem;
   }
@@ -199,5 +191,21 @@ p a:hover {
   .panel.skewed:nth-child(2n) .contents > *,
   .panel.skewed:nth-child(2n) img.backdrop {
     transform: skew(11deg);
+  }
+
+  footer.panel:nth-child(1n) {
+    transform: skew(45deg);
+  }
+
+  footer.panel:nth-child(1n) > * {
+    transform: skew(-45deg);
+  }
+
+  footer.panel:nth-child(2n) {
+    transform: skew(-45deg);
+  }
+
+  footer.panel:nth-child(2n) > * {
+    transform: skew(45deg);
   }
 }
