@@ -120,7 +120,7 @@ p a:hover {
   opacity: 1;
 }
 
-.time-frame {
+.description, .time-frame {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   margin-left: 0.5em;
