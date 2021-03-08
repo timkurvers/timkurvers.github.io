@@ -176,7 +176,7 @@ p a:hover {
   }
 
   .panel.skewed {
-    min-height: 24rem;
+    min-height: 23rem;
   }
 
   .panel.skewed:nth-child(1n) {
@@ -198,18 +198,18 @@ p a:hover {
   }
 
   footer.panel:nth-child(1n) {
-    transform: skew(45deg);
+    transform: skew(44deg);
   }
 
   footer.panel:nth-child(1n) > * {
-    transform: skew(-45deg);
+    transform: skew(-44deg);
   }
 
   footer.panel:nth-child(2n) {
-    transform: skew(-45deg);
+    transform: skew(-44deg);
   }
 
   footer.panel:nth-child(2n) > * {
-    transform: skew(45deg);
+    transform: skew(44deg);
   }
 }
