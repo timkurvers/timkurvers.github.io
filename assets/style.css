@@ -128,6 +128,10 @@ p a:hover {
   vertical-align: middle;
 }
 
+.time-frame .far {
+  font-size: 0.9em;
+}
+
 @media screen and (max-width: 699px) {
   header h1 {
     text-align: center;
