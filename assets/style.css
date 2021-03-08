@@ -148,7 +148,7 @@ p a:hover {
     width: 100px;
   }
 
-  .time-frame {
+  .description, .time-frame {
     display: block;
     margin-left: 0;
   }
